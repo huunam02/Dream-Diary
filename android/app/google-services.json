@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "969452153427",
+    "project_id": "drink-water-reminder-2fd7f",
+    "storage_bucket": "drink-water-reminder-2fd7f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969452153427:android:cedd5625772dcbeecf34a6",
+        "android_client_info": {
+          "package_name": "com.stallion.drinkwaterreminder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgBBDxUe6GuqlTC2-a2_v2xgTTu6eOcVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
