@@ -1,7 +1,7 @@
 import '/screen/chat/controller/chat_controller.dart';
 import '/screen/dream/controller/dream_controller.dart';
-import '/screen/journal/choice_mood/controller/mood_controller.dart';
-import '/screen/journal/journal/controller/journal_controller.dart';
+import 'screen/diary/choice_mood/controller/mood_controller.dart';
+import 'screen/diary/diary/controller/journal_controller.dart';
 import '/screen/languege/controller/languege_controller.dart';
 import '/screen/navbar/controller/navbar_controller.dart';
 import '/screen/permission/controller/permission_controller.dart';
@@ -20,8 +20,8 @@ Future<void> init() async {
   final moodController = MoodController();
   Get.lazyPut(() => moodController, fenix: true);
 
-  final journalController = JournalController();
-  Get.lazyPut(() => journalController, fenix: true);
+  final diaryController = DiaryController();
+  Get.lazyPut(() => diaryController, fenix: true);
 
   final dreamController = DreamController();
   Get.lazyPut(() => dreamController, fenix: true);

@@ -22,7 +22,7 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
         onWebResourceError: (error) {},
       ))
       ..loadRequest(Uri.parse(
-          "https://firebasestorage.googleapis.com/v0/b/asa189-dream-journal.appspot.com/o/Privacy-Policy.html?alt=media&token=aa1e835d-7bc4-43a4-a20b-cca415a06772"));
+          "https://sites.google.com/view/privacypolicyfor-dreamdiary/trang-ch%E1%BB%A7"));
     return Scaffold(
       body: SizedBox(
         width: double.infinity,

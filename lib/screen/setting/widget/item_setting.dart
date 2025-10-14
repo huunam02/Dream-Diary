@@ -32,6 +32,7 @@ class ItemSettingCustom extends StatelessWidget {
                       icon,
                       height: 20.0,
                       width: 20.0,
+                      color: Colors.black,
                     ),
                     const SizedBox(
                       width: 16.0,
@@ -46,6 +47,7 @@ class ItemSettingCustom extends StatelessWidget {
                   "assets/icons/ic_arrow_right.svg",
                   height: 20.0,
                   width: 20.0,
+                  color: Colors.black,
                 ),
               ],
             ),

@@ -3,7 +3,7 @@ class L {
   static const String notSaveYet = "Not saved yet";
   static const String doYouWantKeepSave = "Do you want to keep the\nchanges?";
   static const String version = "version";
-  static const String titleSplash = "Dream Journal & Interpretation";
+  static const String titleSplash = "Dream Diary";
   static const String sun = "Sun";
   static const String mon = "Mon";
   static const String tue = "Tue";
@@ -31,7 +31,7 @@ class L {
   static const String sharing = "Sharing";
   static const String notNow = "Not Now";
   static const String submit = "Submit";
-  static const String titleBoarding1 = "Dream Journaling";
+  static const String titleBoarding1 = "Dream Diary";
   static const String contentBoarding1 =
       "Gently Preserve Your Dream\nMemories Here";
   static const String titleBoarding2 = "Dream Dictionary";
@@ -54,7 +54,7 @@ class L {
       "This app needs permissions below\nto work properly.";
   static const String allowAccess = "Allow access";
   static const String continuePer = "Continue";
-  static const String journal = "Journal";
+  static const String daily = "Diary";
   static const String journalLowCase = "journal";
   static const String startJournal = "Start Journaling";
   static const String isEmptyJournalHome =

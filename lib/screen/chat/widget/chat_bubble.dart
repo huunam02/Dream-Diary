@@ -18,10 +18,12 @@ class _MessageBubbleState extends State<MessageBubble> {
       margin: const EdgeInsets.only(bottom: 16.0),
       leading: Container(
         margin: const EdgeInsets.only(top: 8.0),
-        child: Image.asset(
-          "assets/images/ai_chat.png",
-          width: 32,
-          height: 32,
+        child: ClipOval(
+          child: Image.asset(
+            "assets/images/ai_chat.png",
+            width: 32,
+            height: 32,
+          ),
         ),
       ),
       text: widget.message.content,

@@ -52,7 +52,7 @@ Map<String, String> deLanguage = {  L.notification: "Schreibe jetzt deinen Traum
       "Diese App benötigt die folgenden Berechtigungen, um richtig\nzu funktionieren.",
   L.allowAccess: "Zugriff erlauben",
   L.continuePer: "Fortfahren",
-  L.journal: "Journal",
+  L.daily: "Tagebuchq",
   L.journalLowCase: "journal",
   L.startJournal: "Journal starten",
   L.isEmptyJournalHome:

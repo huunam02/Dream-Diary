@@ -19,7 +19,6 @@ class PermissionScreen extends StatefulWidget {
 class _PermissionScreenState extends LifecycleState<PermissionScreen> {
   final PermissionController permissionCtl = Get.find<PermissionController>();
 
-
   @override
   Widget build(BuildContext context) {
     double h = MediaQuery.of(context).size.height;
@@ -29,12 +28,7 @@ class _PermissionScreenState extends LifecycleState<PermissionScreen> {
         body: Container(
           height: h,
           width: w,
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/images/bg.png"),
-              fit: BoxFit.cover,
-            ),
-          ),
+          color: GlobalColors.bgLight,
           child: SafeArea(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -97,7 +91,6 @@ class _PermissionScreenState extends LifecycleState<PermissionScreen> {
                               padding: 2.2,
                               onToggle: (val) {
                                 permissionCtl.requestAllPermission();
-                           
                               },
                             ),
                           )
@@ -112,8 +105,8 @@ class _PermissionScreenState extends LifecycleState<PermissionScreen> {
                     alignment: Alignment.bottomCenter,
                     child: InkWell(
                       onTap: () async {
-           
                         PreferencesUtil.setIsPermissionGranted(true);
+                        PreferencesUtil.putFirstTime(false);
                         Get.offAll(() => const NavbarScreen());
                       },
                       child: Text(

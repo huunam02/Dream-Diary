@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class GlobalConst {
-  static const String kAppName = "Dream Journal & Interpretation";
-  static const String kPackageName = "com.journalapp.dreamjournal.dreaminterpretation";
+  static const String kAppName = "Dream Diary";
+  static const String kPackageName = "com.dannydev.dreamdiary";
   static const supportedLocales = [
     Locale('en'),
     Locale('es'),

@@ -32,7 +32,7 @@ Map<String, String> ptLanguage = {
   L.sharing: "Compartilhando",
   L.notNow: "Agora Não",
   L.submit: "Enviar",
-  L.titleBoarding1: "Diário de Sonhos",
+  L.titleBoarding1: "Dream Diary",
   L.contentBoarding1: "Preserve Suas Memórias \nde Sonhos Aqui",
   L.titleBoarding2: "Dicionário de Sonhos",
   L.contentBoarding2: "Revele os Símbolos Secretos Dentro \nde Seus Sonhos",
@@ -52,7 +52,7 @@ Map<String, String> ptLanguage = {
       "Este aplicativo precisa das permissões abaixo\npara funcionar corretamente.",
   L.allowAccess: "Permitir acesso",
   L.continuePer: "Continuar",
-  L.journal: "Diário",
+  L.daily: "Diário",
   L.journalLowCase: "diário",
   L.startJournal: "Começar a Registrar",
   L.isEmptyJournalHome:

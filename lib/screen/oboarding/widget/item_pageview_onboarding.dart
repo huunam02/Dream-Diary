@@ -25,10 +25,13 @@ class _ItemPageviewOnboardingState extends State<ItemPageviewOnboarding> {
         children: [
           AspectRatio(
             aspectRatio: 360 / 440,
-            child: Image.asset(
-              widget.imagePath,
-              width: double.infinity,
-              fit: BoxFit.fitWidth,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: Image.asset(
+                widget.imagePath,
+                width: double.infinity,
+           
+              ),
             ),
           ),
           const SizedBox(height: 20),

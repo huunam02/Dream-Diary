@@ -3,8 +3,8 @@ import '/config/global_text_style.dart';
 import '/lang/l.dart';
 import '/screen/chat/chat.dart';
 import '/screen/dream/dream.dart';
-import '/screen/journal/create_journal/create_journal.dart';
-import '/screen/journal/journal/journal.dart';
+import '../diary/create_diary/create_diary.dart';
+import '../diary/diary/diary.dart';
 import '/screen/navbar/controller/navbar_controller.dart';
 import '/screen/setting/setting.dart';
 import '/util/view_ex.dart';
@@ -22,7 +22,7 @@ class NavbarScreen extends StatefulWidget {
 class _NavbarScreenState extends State<NavbarScreen> {
   int _selectedIndex = 0;
   final List<Widget> _screens = [
-    const JournalScreen(),
+    const DiaryScreen(),
     const DreamScreen(),
     const ChatAIScreen(),
     const SettingScreen(),
@@ -62,7 +62,7 @@ class _NavbarScreenState extends State<NavbarScreen> {
                                 _selectedIndex == 0
                                     ? "assets/icons/ic_journal_choice.svg"
                                     : "assets/icons/ic_journal.svg",
-                                L.journal.tr,
+                                L.daily.tr,
                                 0),
                             buildNavBarItem(
                                 _selectedIndex == 1
@@ -73,7 +73,7 @@ class _NavbarScreenState extends State<NavbarScreen> {
                             GestureDetector(
                               onTap: () {
                                 tapAndCheckInternet(() {
-                                  Get.to(() => const CreateJournalScreen());
+                                  Get.to(() => const CreateDiaryScreen());
                                 });
                               },
                               child: Container(
@@ -127,6 +127,9 @@ class _NavbarScreenState extends State<NavbarScreen> {
               height: 20,
               width: 20,
               fit: BoxFit.cover,
+              color: _selectedIndex == index
+                  ? GlobalColors.linearPrimary1.colors.first
+                  : const Color(0xFF8A96B2),
             ),
             const SizedBox(
               height: 4.0,

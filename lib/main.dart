@@ -2,23 +2,19 @@ import '/config/global_const.dart';
 import '/screen/languege/controller/languege_controller.dart';
 import '/screen/splash/splash.dart';
 import '/util/language_utils.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:permission_handler/permission_handler.dart';
 import 'dependecy_injection.dart' as dependecy_injection;
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:timezone/data/latest.dart' as tz;
+
+import 'screen/oboarding/onboarding.dart';
 // hehe
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dependecy_injection.init();
   _hideSystemUI();
-  var permissionNoti = await Permission.notification.status;
-  if (permissionNoti.isGranted) {
-    // await NotificationService.init();
-  }
   tz.initializeTimeZones();
   runApp(const MyApp());
 }
@@ -65,5 +61,4 @@ class MyApp extends StatelessWidget {
       home: const SplashScreen(),
     );
   }
-  //hhi
 }

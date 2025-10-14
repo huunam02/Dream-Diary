@@ -34,8 +34,8 @@ class _AudioPlayCustomState extends LifecycleState<AudioPlayCustom> {
   String maxTime = "00:00";
   String currentTime = "00:00";
   final playerWaveStyle = PlayerWaveStyle(
-      fixedWaveColor: const Color(0xFFC4C4C4).withOpacity(0.12),
-      liveWaveColor: const Color(0xFF3076C9),
+      fixedWaveColor: const Color(0xFFB1C6E8),
+      liveWaveColor: const Color(0xFF3B49DF),
       spacing: 6,
       showSeekLine: false);
 
@@ -89,7 +89,7 @@ class _AudioPlayCustomState extends LifecycleState<AudioPlayCustom> {
             padding: const EdgeInsets.all(12.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16.0),
-              color: const Color(0xFF1D273E),
+              color: GlobalColors.linearPrimary1.colors.first,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

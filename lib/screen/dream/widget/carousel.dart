@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'; // Import thư viện
 
-import 'dart:math';
 
 class CarouselCustom extends StatefulWidget {
   const CarouselCustom({super.key});
@@ -20,25 +19,7 @@ class _CarouselCustomState extends State<CarouselCustom> {
   int _current = 0;
   final CarouselSliderController _controller = CarouselSliderController();
 
-  List<int> _listIndexDream = [];
-
-  void randomList() {
-    final random = Random();
-    int maxNumber = 33;
-    int count = 5;
-    List<int> numbers = List.generate(maxNumber + 1, (index) => index);
-    numbers.shuffle(random);
-    List<int> randomNumbers = numbers.take(count).toList();
-    setState(() {
-      _listIndexDream = randomNumbers;
-    });
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    randomList();
-  }
+  final List<int> _listIndexDream = [0, 1, 2, 3, 4];
 
   @override
   Widget build(BuildContext context) {

@@ -31,7 +31,7 @@ Map<String, String> esLanguage = {  L.notification: "Escribe tu sueño ahora mis
   L.sharing: "Compartiendo",
   L.notNow: "No ahora",
   L.submit: "Enviar",
-  L.titleBoarding1: "Diario de Sueños",
+  L.titleBoarding1: "Dream Diary",
   L.contentBoarding1: "Preserva suavemente tus \nrecuerdosde sueños aquí",
   L.titleBoarding2: "Diccionario de Sueños",
   L.contentBoarding2: "Desvela los símbolos secretos \ndentro de tus sueños",
@@ -52,7 +52,7 @@ Map<String, String> esLanguage = {  L.notification: "Escribe tu sueño ahora mis
       "Esta aplicación necesita los permisos a continuación para\nfuncionar correctamente.",
   L.allowAccess: "Permitir acceso",
   L.continuePer: "Continuar",
-  L.journal: "Diario",
+  L.daily: "Diario",
   L.journalLowCase: "diario",
   L.startJournal: "Comenzar a llevar un diario",
   L.isEmptyJournalHome:

@@ -11,17 +11,13 @@ class PermissionController extends GetxController {
 
   Future<void> checkPermission() async {
     var status1 = await Permission.microphone.status;
-    var status2 = await Permission.notification.status;
+    //   var status2 = await Permission.notification.status;
     var status3 = await Permission.storage.status;
     var status4 = await Permission.photos.status;
-    print("permission $status1 $status2 $status3 $status4");
 
-    if (status1.isGranted &&
-        status2.isGranted &&
-        (status3.isGranted || status4.isGranted)) {
+    if (status1.isGranted && (status3.isGranted || status4.isGranted)) {
       isToggled.value = true;
     } else if (status1.isPermanentlyDenied ||
-        status2.isPermanentlyDenied ||
         (status3.isPermanentlyDenied && status4.isPermanentlyDenied)) {
       requestAllPermission();
     } else {

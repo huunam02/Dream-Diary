@@ -1,3 +1,7 @@
+import 'package:dream_diary/config/global_color.dart';
+import 'package:dream_diary/screen/navbar/navbar.dart';
+import 'package:dream_diary/util/preferences_util.dart';
+
 import '/config/global_text_style.dart';
 import '/lang/l.dart';
 import '/screen/languege/language.dart';
@@ -22,9 +26,11 @@ class _SplashScreenState extends State<SplashScreen> {
   void navigate() {
     Future.delayed(const Duration(seconds: 3)).whenComplete(
       () {
-        Get.off(() => const LanguageScreen(
-              isSetting: false,
-            ));
+        if (!PreferencesUtil.getFirstTime()) {
+          Get.offAll(() => const NavbarScreen());
+        } else {
+          Get.off(() => const LanguageScreen(isSetting: false));
+        }
       },
     );
   }
@@ -40,7 +46,7 @@ class _SplashScreenState extends State<SplashScreen> {
         }
       },
       child: Scaffold(
-        backgroundColor: Colors.transparent,
+        backgroundColor: GlobalColors.bgLight,
         body: BodyCustom(
           isShowBgImages: true,
           child: Column(
@@ -57,9 +63,12 @@ class _SplashScreenState extends State<SplashScreen> {
                     child: Center(
                       child: AspectRatio(
                         aspectRatio: 1,
-                        child: Image.asset(
-                          'assets/images/logo.png',
-                          fit: BoxFit.cover,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(20.0),
+                          child: Image.asset(
+                            'assets/images/logo.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
@@ -83,19 +92,11 @@ class _SplashScreenState extends State<SplashScreen> {
                         borderRadius: BorderRadius.circular(63.0),
                         child: LinearProgressIndicator(
                           backgroundColor: Colors.grey.shade800,
-                          color: const Color(0xFF4350B0),
+                          color: GlobalColors.linearPrimary1.colors.first,
                         ),
                       ),
                       const SizedBox(
-                        height: 14.0,
-                      ),
-                      Text(
-                        textAlign: TextAlign.center,
-                        L.descSplash.tr,
-                        style: GlobalTextStyles.font12w400ColorBlackOp60,
-                      ),
-                      const SizedBox(
-                        height: 20.0,
+                        height: 32.0,
                       ),
                     ],
                   ),

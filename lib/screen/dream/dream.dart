@@ -43,13 +43,13 @@ class _DreamScreenState extends State<DreamScreen> {
                   ),
                   GestureDetector(
                     onTap: () => tapAndCheckInternet(() {
-              
                       Get.to(() => const SearchDreamScreen());
                     }),
                     child: SvgPicture.asset(
                       "assets/icons/ic_journal_search.svg",
                       width: 24.0,
                       height: 24.0,
+                      color: Colors.black,
                     ),
                   ),
                 ],

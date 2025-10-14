@@ -1,5 +1,6 @@
 
 import 'package:dream_diary/base/lifecycle_state.dart';
+import 'package:dream_diary/config/global_color.dart';
 
 import '/config/global_text_style.dart';
 import '/lang/l.dart';
@@ -115,6 +116,7 @@ class _ChatAIScreenState extends LifecycleState<ChatAIScreen> {
                       "assets/icons/ic_reload.svg",
                       width: 24.0,
                       height: 24.0,
+                      color: GlobalColors.linearPrimary1.colors.first,
                     ),
                   ),
                 ],
@@ -143,7 +145,7 @@ class _ChatAIScreenState extends LifecycleState<ChatAIScreen> {
                   padding: const EdgeInsets.symmetric(
                       horizontal: 16.0, vertical: 10.0),
                   decoration: BoxDecoration(
-                      color: const Color(0xFF1D273E),
+                      color:GlobalColors.linearContainer2.colors.first,
                       borderRadius: BorderRadius.circular(32.0)),
                   child: TextField(
                     textAlign: TextAlign.start,
@@ -179,7 +181,7 @@ class _ChatAIScreenState extends LifecycleState<ChatAIScreen> {
                           });
                           _scrollToBottom();
                           chatCtl
-                              .sendMessageToChatGPT(mathText(content))
+                              .sendMessageToGemini(mathText(content))
                               .whenComplete(
                             () {
                               _scrollToBottom();
@@ -199,7 +201,7 @@ class _ChatAIScreenState extends LifecycleState<ChatAIScreen> {
                         : SvgPicture.asset(
                             "assets/icons/ic_send.svg",
                             width: 32.0,
-                            height: 32.0,
+                            height: 32.0,color: Colors.blue,
                           ),
                   ),
                 ),

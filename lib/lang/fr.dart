@@ -32,7 +32,7 @@ Map<String, String> frLanguage = {
   L.sharing: "Partage",
   L.notNow: "Pas maintenant",
   L.submit: "Soumettre",
-  L.titleBoarding1: "Journal des Rêves",
+  L.titleBoarding1: "Dream Diary",
   L.contentBoarding1: "Préservez délicatement vos souvenirs \nde rêves ici",
   L.titleBoarding2: "Dictionnaire des Rêves",
   L.contentBoarding2: "Dévoilez les symboles secrets \ndans vos rêves",
@@ -52,7 +52,7 @@ Map<String, String> frLanguage = {
       "Cette application a besoin des autorisations ci-dessous pour\nfonctionner correctement.",
   L.allowAccess: "Autoriser l'accès",
   L.continuePer: "Continuer",
-  L.journal: "Journal",
+  L.daily: "Diary",
   L.journalLowCase: "journal",
   L.startJournal: "Commencer à tenir un journal",
   L.isEmptyJournalHome:

@@ -1,3 +1,5 @@
+import 'package:dream_diary/config/global_color.dart';
+
 import '/base/lifecycle_state.dart';
 import '/config/global_text_style.dart';
 import '/lang/l.dart';
@@ -30,12 +32,7 @@ class _LanguageScreenState extends LifecycleState<LanguageScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/bg.png"),
-            fit: BoxFit.cover,
-          ),
-        ),
+        color: GlobalColors.bgLight,
         child: SafeArea(
           child: Column(
             children: [
@@ -54,6 +51,7 @@ class _LanguageScreenState extends LifecycleState<LanguageScreen> {
                               child: SvgPicture.asset(
                                 "assets/icons/ic_journal_back.svg",
                                 fit: BoxFit.cover,
+                                color: Colors.black,
                               ),
                             )
                           : const SizedBox.shrink(),
@@ -78,6 +76,7 @@ class _LanguageScreenState extends LifecycleState<LanguageScreen> {
                         "assets/icons/ic_check.svg",
                         width: 24.0,
                         height: 24.0,
+                        color: Colors.black,
                       ),
                     ),
                   ],

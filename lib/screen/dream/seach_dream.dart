@@ -1,3 +1,5 @@
+import 'package:dream_diary/config/global_color.dart';
+
 import '/config/global_text_style.dart';
 import '/lang/l.dart';
 import '/model/dream.dart';
@@ -53,6 +55,7 @@ class _SearchDreamScreenState extends State<SearchDreamScreen> {
                         "assets/icons/ic_journal_back.svg",
                         width: 24.0,
                         height: 24.0,
+                        color: Colors.black,
                       ),
                     ),
                     const SizedBox(
@@ -65,7 +68,7 @@ class _SearchDreamScreenState extends State<SearchDreamScreen> {
                         padding: const EdgeInsets.symmetric(
                             horizontal: 8.0, vertical: 10.0),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF1D273E),
+                          color: GlobalColors.linearContainer2.colors.first,
                           borderRadius: BorderRadius.circular(32.0),
                         ),
                         child: TextField(
@@ -83,7 +86,7 @@ class _SearchDreamScreenState extends State<SearchDreamScreen> {
                             contentPadding: EdgeInsets.zero,
                             hintText: L.search.tr,
                             hintStyle:
-                                GlobalTextStyles.font14w400ColorBlackOp38,
+                                GlobalTextStyles.font14w400ColorBlack,
                             border: InputBorder.none,
                             prefixIcon: Padding(
                               padding: const EdgeInsets.only(right: 4.0),
@@ -91,6 +94,7 @@ class _SearchDreamScreenState extends State<SearchDreamScreen> {
                                 "assets/icons/ic_journal_search.svg",
                                 width: 20.0,
                                 height: 20.0,
+                                color: Colors.black,
                               ),
                             ),
                             suffixIcon: InkWell(
@@ -106,6 +110,7 @@ class _SearchDreamScreenState extends State<SearchDreamScreen> {
                                 "assets/icons/ic_close.svg",
                                 width: 20.0,
                                 height: 20.0,
+                                color: Colors.black,
                               ),
                             ),
                           ),
@@ -140,7 +145,7 @@ class _SearchDreamScreenState extends State<SearchDreamScreen> {
                       : Center(
                           child: Text(
                             "No search result",
-                            style: GlobalTextStyles.font14w400ColorBlackOp38,
+                            style: GlobalTextStyles.font14w400ColorBlack,
                           ),
                         )))
             ])));
