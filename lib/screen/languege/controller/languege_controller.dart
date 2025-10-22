@@ -13,6 +13,7 @@ class LanguageController extends GetxController {
     Languege("German", "assets/images/german.png", "de"),
     Languege("Indonesian", "assets/images/indonesia.png", "id"),
     Languege("Portuguese", "assets/images/portuguese.png", "pt"),
+    Languege("Vietnamese", "assets/images/vietnam.png", "vi"),
   ].obs;
   RxString currentLang = PreferencesUtil.getLanguage().obs;
 

@@ -9,8 +9,7 @@ class ChatController extends GetxController {
   RxList<Message> listMesagge = <Message>[].obs;
   RxBool isSending = false.obs;
 
-  // KHÔNG hard-code key trong app production
-  static const String _apiKey = 'AIzaSyDc_joVZxVJlHvbsTwljTTtIGrjp_2TFCQ';
+  static const String _apiKey = 'AIzaSyCBprD04b_UamnQ1iuRjYmBGWuCgQ9C67A';
   static const String _endpoint =
       'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
 
@@ -62,14 +61,13 @@ class ChatController extends GetxController {
         listMesagge.add(Message(content: reply, isBot: true));
       } else {
         listMesagge.add(Message(
-          content:
-              "Gemini trả về lỗi ${res.statusCode}. Vui lòng thử lại!\n${res.body}",
+          content: "Đã có lỗi xảy ra vui lòng thử lại sau!",
           isBot: true,
         ));
       }
     } catch (e) {
       listMesagge.add(Message(
-        content: "Có lỗi xảy ra khi gọi Gemini. Vui lòng thử lại!",
+        content: "Đã có lỗi xảy ra vui lòng thử lại sau!",
         isBot: true,
       ));
     } finally {
