@@ -16,7 +16,7 @@ class ItemDreamCustom extends StatelessWidget {
         height: w * 0.4,
         decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage(
+              image: NetworkImage(
                 dream.image156x156,
               ),
               fit: BoxFit.cover,

@@ -54,7 +54,7 @@ class _CarouselCustomState extends State<CarouselCustom> {
                           child: SizedBox(
                             height: double.infinity,
                             width: double.infinity,
-                            child: Image.asset(
+                            child: Image.network(
                                 listDream[_listIndexDream[index]].imageCarousel,
                                 fit: BoxFit.cover,
                                 width: 1000.0),

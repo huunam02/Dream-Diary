@@ -21,7 +21,7 @@ class ItemRandomDreamCustom extends StatelessWidget {
             height: 120.0,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(12.0),
-              child: Image.asset(
+              child: Image.network(
                 dream.image120x120,
                 fit: BoxFit.cover,
               ),

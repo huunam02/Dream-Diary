@@ -48,7 +48,7 @@ class _DetailDreamScreenState extends State<DetailDreamScreen> {
                       children: [
                         AspectRatio(
                           aspectRatio: 360 / 320,
-                          child: Image.asset(
+                          child: Image.network(
                             widget.dream.image360x352,
                             fit: BoxFit.cover,
                           ),
