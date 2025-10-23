@@ -8,9 +8,6 @@ import 'package:get/get.dart';
 import 'dependecy_injection.dart' as dependecy_injection;
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:timezone/data/latest.dart' as tz;
-
-import 'screen/oboarding/onboarding.dart';
-// hehe
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dependecy_injection.init();

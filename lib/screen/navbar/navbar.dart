@@ -1,7 +1,7 @@
 import '/config/global_color.dart';
 import '/config/global_text_style.dart';
 import '/lang/l.dart';
-import '/screen/chat/chat.dart';
+import '../chat_bot/chat.dart';
 import '/screen/dream/dream.dart';
 import '../diary/create_diary/create_diary.dart';
 import '../diary/diary/diary.dart';

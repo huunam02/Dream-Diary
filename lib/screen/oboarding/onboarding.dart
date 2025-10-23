@@ -7,7 +7,6 @@ import '/screen/oboarding/widget/item_pageview_onboarding.dart';
 import '/screen/permission/permission.dart';
 import '/util/preferences_util.dart';
 import '/util/view_ex.dart';
-import '/widget/body_background.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';

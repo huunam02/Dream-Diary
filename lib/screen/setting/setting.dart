@@ -23,7 +23,6 @@ class SettingScreen extends StatefulWidget {
 }
 
 class _SettingScreenState extends State<SettingScreen> {
-  // final settingCtl = Get.find<SettingController>();
   bool isClicking = false;
   int hour = PreferencesUtil.getHourDailyReminder();
   int minute = PreferencesUtil.getMinuteDailyReminder();
@@ -45,14 +44,12 @@ class _SettingScreenState extends State<SettingScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _getAppVersion();
   }
 
   @override
   Widget build(BuildContext context) {
-    double h = MediaQuery.of(context).size.height;
     return BodyCustom(
         isShowBgImages: false,
         edgeInsetsPadding: const EdgeInsets.symmetric(horizontal: 16),

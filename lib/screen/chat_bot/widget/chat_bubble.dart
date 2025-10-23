@@ -1,6 +1,6 @@
 import '/config/global_color.dart';
 import '/model/message.dart';
-import '/screen/chat/widget/chat_bubble_custom.dart';
+import 'chat_bubble_custom.dart';
 import 'package:flutter/material.dart';
 
 class MessageBubble extends StatefulWidget {

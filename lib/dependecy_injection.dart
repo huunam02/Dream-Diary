@@ -1,4 +1,4 @@
-import '/screen/chat/controller/chat_controller.dart';
+import 'screen/chat_bot/controller/chat_controller.dart';
 import '/screen/dream/controller/dream_controller.dart';
 import 'screen/diary/choice_mood/controller/mood_controller.dart';
 import 'screen/diary/diary/controller/journal_controller.dart';
