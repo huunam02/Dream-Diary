@@ -56,7 +56,7 @@ class L {
   static const String continuePer = "Continue";
   static const String daily = "Diary";
   static const String journalLowCase = "journal";
-  static const String startJournal = "Start Journaling";
+  static const String startDiary = "Start Diary";
   static const String isEmptyJournalHome =
       "Start your personal journal today.\nTap the writing button to begin!";
   static const String untitled = "Untitled";

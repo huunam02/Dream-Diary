@@ -19,20 +19,19 @@ import 'package:flutter_sound/flutter_sound.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:calendar_date_picker2/calendar_date_picker2.dart';
-import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-class EditJournalScreen extends StatefulWidget {
-  const EditJournalScreen({super.key, required this.journal});
+class EditDiaryScreen extends StatefulWidget {
+  const EditDiaryScreen({super.key, required this.journal});
   final Journal journal;
 
   @override
-  State<EditJournalScreen> createState() => _EditJournalScreenState();
+  State<EditDiaryScreen> createState() => _EditDiaryScreenState();
 }
 
-class _EditJournalScreenState extends State<EditJournalScreen> {
+class _EditDiaryScreenState extends State<EditDiaryScreen> {
   DateTime _selectedDate = DateTime.now();
   final moodCtl = Get.find<MoodController>();
   final journalCtl = Get.find<DiaryController>();
@@ -316,14 +315,14 @@ class _EditJournalScreenState extends State<EditJournalScreen> {
                           GestureDetector(
                             onTap: () async {
                               var value = await showCalendarDatePicker2Dialog(
-                                  barrierDismissible: true,
-                                  context: context,
-                                  config: configCalendar(context),
-                                  dialogSize: const Size(264, 357),
-                                  borderRadius: BorderRadius.circular(8),
-                                  value: [_selectedDate],
-                                  dialogBackgroundColor: GlobalColors
-                                      .linearContainer2.colors.first);
+                                barrierDismissible: true,
+                                context: context,
+                                config: configCalendar(context),
+                                dialogSize: const Size(264, 357),
+                                borderRadius: BorderRadius.circular(8),
+                                value: [_selectedDate],
+                                dialogBackgroundColor: Colors.deepPurpleAccent,
+                              );
                               if (value != null && value.isNotEmpty) {
                                 setState(() {
                                   _selectedDate = value.first!;

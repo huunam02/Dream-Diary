@@ -319,14 +319,14 @@ class _CreateDiaryScreenState extends State<CreateDiaryScreen> {
                           GestureDetector(
                             onTap: () async {
                               var value = await showCalendarDatePicker2Dialog(
-                                  barrierDismissible: true,
-                                  context: context,
-                                  config: configCalendar(context),
-                                  dialogSize: const Size(290.0, 380.0),
-                                  borderRadius: BorderRadius.circular(8),
-                                  value: [_selectedDate],
-                                  dialogBackgroundColor:
-                                      const Color(0xFF1D273E));
+                                barrierDismissible: true,
+                                context: context,
+                                config: configCalendar(context),
+                                dialogSize: const Size(290.0, 380.0),
+                                borderRadius: BorderRadius.circular(8),
+                                value: [_selectedDate],
+                                dialogBackgroundColor: Colors.deepPurpleAccent,
+                              );
                               if (value != null && value.isNotEmpty) {
                                 setState(() {
                                   _selectedDate = value.first!;
@@ -538,13 +538,14 @@ class _CreateDiaryScreenState extends State<CreateDiaryScreen> {
                           height: 48.0,
                           width: w * 0.9,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(39.0),
-                              gradient: isValidTitle
-                                  ? GlobalColors.linearPrimary2
-                                  : null,
-                              color: isValidTitle
-                                  ? null
-                                  : GlobalColors.linearPrimary1.colors.first,),
+                            borderRadius: BorderRadius.circular(39.0),
+                            gradient: isValidTitle
+                                ? GlobalColors.linearPrimary2
+                                : null,
+                            color: isValidTitle
+                                ? null
+                                : GlobalColors.linearPrimary1.colors.first,
+                          ),
                           child: Text(
                             L.save.tr,
                             style: isValidTitle

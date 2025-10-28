@@ -5,20 +5,20 @@ import '/lang/l.dart';
 import '/model/journal.dart';
 import '../choice_mood/controller/mood_controller.dart';
 import '../diary/controller/journal_controller.dart';
-import '../diary/widget/journal_in_month_item.dart';
+import '../diary/widget/diary_in_month_item.dart';
 import '/widget/body_background.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
-class SearchJournalScreen extends StatefulWidget {
-  const SearchJournalScreen({super.key});
+class SearchDiaryScreen extends StatefulWidget {
+  const SearchDiaryScreen({super.key});
 
   @override
-  State<SearchJournalScreen> createState() => _SearchJournalScreenState();
+  State<SearchDiaryScreen> createState() => _SearchDiaryScreenState();
 }
 
-class _SearchJournalScreenState extends State<SearchJournalScreen> {
+class _SearchDiaryScreenState extends State<SearchDiaryScreen> {
   final journalCtl = Get.find<DiaryController>();
   final moodCtl = Get.find<MoodController>();
   final searchController = TextEditingController();
@@ -138,9 +138,8 @@ class _SearchJournalScreenState extends State<SearchJournalScreen> {
                               journalCtl.listJournalSearch[index];
                           String getKeyMonth = monthData.keys.first;
                           var data = monthData[getKeyMonth];
-                          return JournalInMonthItemCustom(
+                          return DiaryInMonthItemCustom(
                               onDetail: () {
-                            
                                 Get.back();
                               },
                               titleMonth: getKeyMonth,

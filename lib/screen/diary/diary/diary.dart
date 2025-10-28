@@ -3,8 +3,8 @@ import '/lang/l.dart';
 import '/model/journal.dart';
 import '../choice_mood/controller/mood_controller.dart';
 import 'controller/journal_controller.dart';
-import 'widget/journal_in_month_item.dart';
-import '../search_journal/seach_journal.dart';
+import 'widget/diary_in_month_item.dart';
+import '../search_diary/seach_diary.dart';
 import '/util/view_ex.dart';
 import '/widget/body_background.dart';
 import 'package:flutter/material.dart';
@@ -50,7 +50,7 @@ class _DiaryScreenState extends State<DiaryScreen> {
                 GestureDetector(
                   onTap: () {
                     tapAndCheckInternet(() {
-                      Get.to(() => const SearchJournalScreen());
+                      Get.to(() => const SearchDiaryScreen());
                     });
                   },
                   child: SvgPicture.asset(
@@ -87,7 +87,7 @@ class _DiaryScreenState extends State<DiaryScreen> {
                               height: 8.0,
                             ),
                             Text(
-                              L.startJournal.tr,
+                              L.startDiary.tr,
                               style: GlobalTextStyles.font16w600ColorBlack,
                             ),
                             const SizedBox(
@@ -107,7 +107,7 @@ class _DiaryScreenState extends State<DiaryScreen> {
                                 journalCtl.listJournalNew[index];
                             String getKeyMonth = monthData.keys.first;
                             var data = monthData[getKeyMonth];
-                            return JournalInMonthItemCustom(
+                            return DiaryInMonthItemCustom(
                               onDetail: () {},
                               data: data!,
                               titleMonth: getKeyMonth,

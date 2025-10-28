@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'widget/modalbottomsheet_detete.dart';
-import '../edit_journal/edit_journal.dart';
+import '../edit_diary/edit_diary.dart';
 import '../diary/controller/journal_controller.dart';
 import '../diary/widget/mood_item.dart';
 import '/util/format_date.dart';
@@ -15,14 +15,14 @@ import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 
 
-class DetailJournal extends StatefulWidget {
-  const DetailJournal({super.key, required this.journal});
+class DetailDiary extends StatefulWidget {
+  const DetailDiary({super.key, required this.journal});
   final Journal journal;
   @override
-  State<DetailJournal> createState() => _DetailJournalState();
+  State<DetailDiary> createState() => _DetailDiaryState();
 }
 
-class _DetailJournalState extends State<DetailJournal> {
+class _DetailDiaryState extends State<DetailDiary> {
   late Directory appDirectory;
   final moodCtl = Get.find<MoodController>();
   final journalCtl = Get.find<DiaryController>();
@@ -73,7 +73,7 @@ class _DetailJournalState extends State<DetailJournal> {
                         children: [
                           GestureDetector(
                             onTap: () => Get.to(() =>
-                                EditJournalScreen(journal: widget.journal)),
+                                EditDiaryScreen(journal: widget.journal)),
                             child: SvgPicture.asset(
                               "assets/icons/ic_edit.svg",
                               width: 24.0,

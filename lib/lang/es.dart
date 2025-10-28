@@ -54,7 +54,7 @@ Map<String, String> esLanguage = {  L.notification: "Escribe tu sueño ahora mis
   L.continuePer: "Continuar",
   L.daily: "Diario",
   L.journalLowCase: "diario",
-  L.startJournal: "Comenzar a llevar un diario",
+  L.startDiary: "Comenzar Diario",
   L.isEmptyJournalHome:
       "Comienza tu diario personal hoy.\n¡Toca el botón de escritura para comenzar!",
   L.untitled: "Sin título",

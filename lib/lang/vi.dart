@@ -54,7 +54,7 @@ Map<String, String> viLanguage = {
   L.continuePer: "Tiếp tục",
   L.daily: "Nhật ký",
   L.journalLowCase: "nhật ký",
-  L.startJournal: "Bắt đầu viết nhật ký",
+  L.startDiary: "Bắt đầu nhật ký",
   L.isEmptyJournalHome:
       "Bắt đầu nhật ký cá nhân của bạn hôm nay.\nChạm nút viết để bắt đầu!",
   L.untitled: "Không tiêu đề",

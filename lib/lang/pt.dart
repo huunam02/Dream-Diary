@@ -54,7 +54,7 @@ Map<String, String> ptLanguage = {
   L.continuePer: "Continuar",
   L.daily: "Diário",
   L.journalLowCase: "diário",
-  L.startJournal: "Começar a Registrar",
+  L.startDiary: "Começar Diário",
   L.isEmptyJournalHome:
       "Comece seu diário pessoal hoje.\nToque no botão de escrita para começar!",
   L.untitled: "Sem título",

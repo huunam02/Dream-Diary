@@ -53,7 +53,7 @@ Map<String, String> idLanguage = { L.notification: "Tuliskan mimpimu sekarang",
   L.continuePer: "Lanjutkan",
   L.daily: "Jurnal",
   L.journalLowCase: "jurnal",
-  L.startJournal: "Mulai Menulis Jurnal",
+  L.startDiary: "Mulai Jurnal",
   L.isEmptyJournalHome:
       "Mulailah jurnal pribadi Anda hari ini.\nKetuk tombol tulis untuk memulai!",
   L.untitled: "Tanpa Judul",

@@ -3,12 +3,12 @@ import '/config/global_text_style.dart';
 import '/lang/l.dart';
 import '/model/journal.dart';
 import '../../choice_mood/controller/mood_controller.dart';
-import '../../detail_journal/detail_journal.dart';
+import '../../detail_diary/detail_diary.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class JournalInMonthItemCustom extends StatefulWidget {
-  const JournalInMonthItemCustom(
+class DiaryInMonthItemCustom extends StatefulWidget {
+  const DiaryInMonthItemCustom(
       {super.key,
       required this.titleMonth,
       required this.data,
@@ -17,11 +17,10 @@ class JournalInMonthItemCustom extends StatefulWidget {
   final Map<String, List<Journal>> data;
   final GestureTapCallback onDetail;
   @override
-  State<JournalInMonthItemCustom> createState() =>
-      _JournalInMonthItemCustomState();
+  State<DiaryInMonthItemCustom> createState() => _DiaryInMonthItemCustomState();
 }
 
-class _JournalInMonthItemCustomState extends State<JournalInMonthItemCustom> {
+class _DiaryInMonthItemCustomState extends State<DiaryInMonthItemCustom> {
   final moodCtl = Get.find<MoodController>();
   @override
   Widget build(BuildContext context) {
@@ -109,7 +108,7 @@ class _JournalInMonthItemCustomState extends State<JournalInMonthItemCustom> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Get.to(() => DetailJournal(journal: journal))!.then(
+                          Get.to(() => DetailDiary(journal: journal))!.then(
                             (value) {
                               widget.onDetail();
                             },

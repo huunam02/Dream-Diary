@@ -54,7 +54,7 @@ Map<String, String> deLanguage = {  L.notification: "Schreibe jetzt deinen Traum
   L.continuePer: "Fortfahren",
   L.daily: "Tagebuchq",
   L.journalLowCase: "journal",
-  L.startJournal: "Journal starten",
+  L.startDiary: "Tagebuch beginnen",
   L.isEmptyJournalHome:
       "Beginnen Sie noch heute mit Ihrem persönlichen Journal.\nTippen Sie auf die Schreibschaltfläche, um zu beginnen!",
   L.untitled: "Unbetitelt",

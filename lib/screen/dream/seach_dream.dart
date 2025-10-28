@@ -33,8 +33,6 @@ class _SearchDreamScreenState extends State<SearchDreamScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // double h = MediaQuery.of(context).size.height;
-    double w = MediaQuery.of(context).size.width;
     return Scaffold(
         resizeToAvoidBottomInset: false,
         body: BodyCustom(
@@ -85,8 +83,7 @@ class _SearchDreamScreenState extends State<SearchDreamScreen> {
                             isCollapsed: true,
                             contentPadding: EdgeInsets.zero,
                             hintText: L.search.tr,
-                            hintStyle:
-                                GlobalTextStyles.font14w400ColorBlack,
+                            hintStyle: GlobalTextStyles.font14w400ColorBlack,
                             border: InputBorder.none,
                             prefixIcon: Padding(
                               padding: const EdgeInsets.only(right: 4.0),
