@@ -27,9 +27,10 @@ class CustomMoodItem2 extends StatelessWidget {
               fontWeight: FontWeight.w400,
             ),
           ),
+          const SizedBox(width: 4),
           Text(
             textAlign: TextAlign.center,
-            getSecondLetterOfFirstWord(title.tr),
+            removeFirstWord(title.tr),
             style: GlobalTextStyles.font12w400ColorBlack,
           ),
         ],
@@ -43,10 +44,10 @@ class CustomMoodItem2 extends StatelessWidget {
     return words[0];
   }
 
-  String getSecondLetterOfFirstWord(String input) {
+  String removeFirstWord(String input) {
     List<String> words = input.split(' ');
-
-    return " ${words[1]}";
+    if (words.length <= 1) return '';
+    return words.sublist(1).join(' ');
   }
 }
 
@@ -84,9 +85,10 @@ class _CustomMoodItem1State extends State<CustomMoodItem1> {
               fontWeight: FontWeight.w400,
             ),
           ),
+          const SizedBox(width: 4),
           Text(
             textAlign: TextAlign.center,
-            getSecondLetterOfFirstWord(widget.mood.title.tr),
+            removeFirstWord(widget.mood.title.tr),
             style: GlobalTextStyles.font12w400ColorBlack,
           ),
         ],
@@ -100,9 +102,9 @@ class _CustomMoodItem1State extends State<CustomMoodItem1> {
     return words[0];
   }
 
-  String getSecondLetterOfFirstWord(String input) {
+  String removeFirstWord(String input) {
     List<String> words = input.split(' ');
-
-    return " ${words[1]}";
+    if (words.length <= 1) return '';
+    return words.sublist(1).join(' ');
   }
 }

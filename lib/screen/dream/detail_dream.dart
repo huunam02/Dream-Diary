@@ -1,5 +1,7 @@
 import 'dart:math';
 import 'dart:ui';
+import 'package:dream_diary/widget/image_base.dart';
+
 import '/config/global_text_style.dart';
 import '/lang/l.dart';
 import '/model/dream.dart';
@@ -48,7 +50,7 @@ class _DetailDreamScreenState extends State<DetailDreamScreen> {
                       children: [
                         AspectRatio(
                           aspectRatio: 360 / 320,
-                          child: Image.network(
+                          child: ImageNetworkBase(
                             widget.dream.image360x352,
                             fit: BoxFit.cover,
                           ),
@@ -150,7 +152,6 @@ class _DetailDreamScreenState extends State<DetailDreamScreen> {
                       return GestureDetector(
                           onTap: () {
                             tapAndCheckInternet(() {
-                  
                               Get.back();
                               Get.to(DetailDreamScreen(dream: dream));
                             });

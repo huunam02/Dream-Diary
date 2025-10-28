@@ -84,29 +84,29 @@ Map<String, String> viLanguage = {
   L.chat: "Trò chuyện",
   L.helloChatBot:
       "Xin chào! Hôm nay bạn có giấc mơ nào muốn chia sẻ không? Cùng khám phá ý nghĩa và thông điệp đằng sau nhé!",
-  L.mood1: "😊 Thích thú",
+  L.mood1: "😊 Vui vẻ",
   L.mood2: "😡 Giận dữ",
   L.mood3: "🤢 Ghê tởm",
-  L.mood4: "😩 Bực bội",
-  L.mood5: "😰 Lo âu",
-  L.mood6: "😱 Khiếp sợ",
+  L.mood4: "😩 Phiền muộn",
+  L.mood5: "😰 Lo lắng",
+  L.mood6: "😱 Kinh hoàng",
   L.mood7: "🥱 Chán nản",
-  L.mood8: "😌 Bình thản",
+  L.mood8: "😌 Bình yên",
   L.mood9: "😓 Tội lỗi",
   L.mood10: "😞 Trầm cảm",
   L.mood11: "😎 Tự tin",
   L.mood12: "😨 Sợ hãi",
   L.mood13: "😕 Bối rối",
-  L.mood14: "😊 Mãn nguyện",
-  L.mood15: "😊 Vui vẻ",
+  L.mood14: "😊 Hài lòng",
+  L.mood15: "😊 Vui mừng",
   L.mood16: "😞 Thất vọng",
   L.mood17: "🤩 Tự hào",
-  L.mood18: "😌 Bình yên",
-  L.mood19: "😕 Ức chế",
+  L.mood18: "😌 Thanh thản",
+  L.mood19: "😕 Bực bội",
   L.mood20: "😢 Buồn bã",
   L.mood21: "😓 Xấu hổ",
   L.mood22: "😒 Ghen tị",
-  L.mood23: "😬 Ngượng ngùng",
+  L.mood23: "😬 Ngại ngùng",
   L.mood24: "😞 Cô đơn",
   L.mood25: "😌 Thư giãn",
   L.mood26: "☺️ Biết ơn",
@@ -115,7 +115,25 @@ Map<String, String> viLanguage = {
   L.mood29: "😚 Hy vọng",
   L.mood30: "🤩 Truyền cảm hứng",
   L.mood31: "😲 Ngạc nhiên",
-  L.mood32: "😇 Cảm thông",
+  L.mood32: "😇 Thương xót",
+  L.mood33: "😤 Quyết tâm",
+  L.mood34: "😴 Buồn ngủ",
+  L.mood35: "🤯 Quá tải",
+  L.mood36: "🥹 Hoài niệm",
+  L.mood37: "😔 Hối hận",
+  L.mood38: "😵 Mâu thuẫn",
+  L.mood39: "😇 An yên",
+  L.mood40: "🤗 Thân thiện",
+  L.mood41: "😍 Yêu thương",
+  L.mood42: "🤔 Tò mò",
+  L.mood43: "😶 Thờ ơ",
+  L.mood44: "😤 Động lực",
+  L.mood45: "🤨 Hoài nghi",
+  L.mood46: "😋 Thỏa mãn",
+  L.mood47: "😖 Căng thẳng",
+  L.mood48: "😫 Kiệt sức",
+  L.mood49: "😜 Tinh nghịch",
+  L.mood50: "😐 Trung tính",
   L.title1: "Nước",
   L.title2: "Lạc đường",
   L.title3: "Biển",
@@ -162,86 +180,75 @@ Map<String, String> viLanguage = {
 Nhìn chung, nước là biểu tượng mạnh mẽ của trạng thái cảm xúc và dòng chảy trải nghiệm, giúp bạn hiểu nội tâm và thử thách.""",
   L.dreamDes2:
       """Mơ bị lạc thường biểu thị cảm giác bối rối, thiếu định hướng trong đời sống thực. Có thể bạn loay hoay trước quyết định quan trọng, sợ không kiểm soát được tình huống, hay lo lắng vì chưa sẵn sàng. Cũng có thể phản ánh nỗi sợ thất bại hoặc điều chưa biết. Điều này có liên quan tới trải nghiệm hiện tại của bạn không?""",
-  L.dreamDes3:
-      """Mơ về biển có nhiều tầng nghĩa:
+  L.dreamDes3: """Mơ về biển có nhiều tầng nghĩa:
 
 1. Cảm xúc & tiềm thức: Biển tượng trưng cảm xúc sâu thẳm. Biển êm = an yên; biển động = xáo trộn, lo âu.
 2. Tự do & mở rộng: Biển mênh mông gợi khát khao khám phá, vượt giới hạn, tìm cơ hội mới.
 3. Biến đổi & khó lường: Sóng lên xuống như nhịp đổi thay cuộc sống; phản ánh bất định khi bạn đang chuyển pha.
 4. Kết nối: Gợi mong muốn kết nối sâu hơn với bản thân, người khác hoặc thiên nhiên.""",
-  L.dreamDes4:
-      """Mơ về tiền mang nhiều ý nghĩa:
+  L.dreamDes4: """Mơ về tiền mang nhiều ý nghĩa:
 
 1. Giá trị & tự tin: Tiền gắn với giá trị, quyền lực. Nhặt/nhận tiền = cảm thấy có giá trị, thành công.
 2. Lo toan tài chính: Khó giữ/kiếm tiền trong mơ = áp lực tài chính đời thực.
 3. Cơ hội & thay đổi: Nhận khoản lớn = tín hiệu cơ hội hoặc chuyển biến tích cực.
 4. Giá trị bản thân & quan hệ: Cho/nhận tiền = cảm nhận về sự trao đổi giá trị trong mối quan hệ.
 5. Kiểm soát & quyền lực: Bị chi phối bởi tiền = nhu cầu kiểm soát hoặc đang bị quyền lực chi phối.""",
-  L.dreamDes5:
-      """Mơ bay trên trời:
+  L.dreamDes5: """Mơ bay trên trời:
 
 1. Tự do, giải phóng: Bay bổng, thoải mái = muốn thoát khỏi căng thẳng, ràng buộc.
 2. Hoài bão cao: Bay cao xa = mục tiêu lớn, tham vọng mạnh.
 3. Góc nhìn mới: Bay giúp nhìn từ trên cao = tìm cách nhìn khác đi để hiểu sâu vấn đề.
 4. Trốn tránh: Bay để né tình huống = đang chịu áp lực, không hài lòng thực tại.
 5. Tự tin & kiểm soát: Bay dễ dàng = tự chủ, làm chủ cuộc sống.""",
-  L.dreamDes6:
-      """Mơ rơi từ độ cao thường gắn với:
+  L.dreamDes6: """Mơ rơi từ độ cao thường gắn với:
 
 1. Mất kiểm soát trong công việc/quan hệ/cảm xúc.
 2. Lo âu về tương lai chưa chắc chắn.
 3. Cảm giác thiếu năng lực trước thử thách lớn.
 4. Chuyển đổi/biến động gây bất an.""",
-  L.dreamDes7:
-      """Mơ bị truy đuổi:
+  L.dreamDes7: """Mơ bị truy đuổi:
 
 1. Né tránh vấn đề/cảm xúc khó đối mặt.
 2. Lo âu, sợ hãi trước trách nhiệm hay tình huống ngoài kiểm soát.
 3. Bị áp lực kỳ vọng.
 4. Thiếu an toàn, bất an.
 5. Mất kiểm soát trong một khía cạnh đời sống.""",
-  L.dreamDes8:
-      """Mơ kho báu ẩn:
+  L.dreamDes8: """Mơ kho báu ẩn:
 
 1. Khai phá tiềm năng còn ẩn giấu.
 2. Cơ hội mới sắp đến.
 3. Hoài bão, mục tiêu đang theo đuổi.
 4. Giá trị bên trong/ tài năng chưa phát triển.
 5. Tìm kiếm sự viên mãn, hạnh phúc.""",
-  L.dreamDes9:
-      """Mơ khu rừng:
+  L.dreamDes9: """Mơ khu rừng:
 
 1. Hành trình khám phá bản thân/ý nghĩa sống.
 2. Lạc lối = thiếu định hướng.
 3. Rừng rậm = bị choáng ngợp bởi nhiều vấn đề.
 4. Rừng yên bình = mong cầu tĩnh lặng, kết nối thiên nhiên.
 5. Tăng trưởng cá nhân, khai mở tiềm năng.""",
-  L.dreamDes10:
-      """Mơ sa mạc:
+  L.dreamDes10: """Mơ sa mạc:
 
 1. Cô đơn, trống trải.
 2. Thiếu thốn cảm xúc/tinh thần, mong đổi thay.
 3. Tự do, tự khám phá bản thân.
 4. Thử thách cần kiên nhẫn vượt qua.
 5. Tĩnh tại, yên bình để hồi phục.""",
-  L.dreamDes11:
-      """Mơ gặp người ngoài hành tinh:
+  L.dreamDes11: """Mơ gặp người ngoài hành tinh:
 
 1. Khám phá điều chưa biết, khao khát trải nghiệm mới.
 2. Cảm giác khác biệt, lạc lõng.
 3. Mở lòng với góc nhìn/ý tưởng mới.
 4. Lo âu trước bất định và thay đổi.
 5. Mong muốn kết nối, thấu hiểu sâu hơn.""",
-  L.dreamDes12:
-      """Mơ leo núi:
+  L.dreamDes12: """Mơ leo núi:
 
 1. Thử thách & thành công khi vượt khó.
 2. Nỗ lực & bền bỉ để đạt mục tiêu.
 3. Tìm kiếm mục tiêu cao hơn.
 4. Cảm giác thành tựu khi lên đỉnh.
 5. Lo lắng nếu thấy mệt/sợ trong lúc leo.""",
-  L.dreamDes13:
-      """Mơ đám cưới:
+  L.dreamDes13: """Mơ đám cưới:
 
 1. Cam kết/ hòa hợp (trong quan hệ, dự án, hay bước ngoặt).
 2. Khởi đầu mới.
@@ -249,8 +256,7 @@ Nhìn chung, nước là biểu tượng mạnh mẽ của trạng thái cảm x
 4. Kết nối xã hội & cảm xúc.
 5. Lo lắng/ kỳ vọng về cam kết.
 6. Chi tiết giấc mơ (ai cưới, cảm xúc, bối cảnh) giúp hiểu rõ hơn.""",
-  L.dreamDes14:
-      """Mơ lạc giữa thành phố:
+  L.dreamDes14: """Mơ lạc giữa thành phố:
 
 1. Bị quá tải bởi sự phức tạp.
 2. Tìm kiếm phương hướng, mục tiêu.
@@ -258,8 +264,7 @@ Nhìn chung, nước là biểu tượng mạnh mẽ của trạng thái cảm x
 4. Khao khát thay đổi, thoát khỏi lối mòn.
 5. Cô lập, thiếu kết nối.
 6. Hãy xét cảm xúc & hoàn cảnh cá nhân để hiểu sâu hơn.""",
-  L.dreamDes15:
-      """Mơ gặp ma:
+  L.dreamDes15: """Mơ gặp ma:
 
 1. Vấn đề quá khứ chưa giải quyết.
 2. Cảm giác tội lỗi/hối tiếc.
@@ -267,96 +272,84 @@ Nhìn chung, nước là biểu tượng mạnh mẽ của trạng thái cảm x
 4. Chuyển pha cuộc sống.
 5. Liên hệ quá khứ nhắc nhở bạn chiêm nghiệm và học hỏi.
 6. Chi tiết & phản ứng của bạn trong mơ rất quan trọng.""",
-  L.dreamDes16:
-      """Mơ trúng số:
+  L.dreamDes16: """Mơ trúng số:
 
 1. Khát khao thành công/đổi đời.
 2. Thỏa mãn mong ước, hy vọng thay đổi đột phá.
 3. Cảm giác may mắn, lạc quan về cơ hội sắp tới.
 4. Trông đợi phần thưởng/ghi nhận.
 5. Suy nghĩ về rủi ro & quyết định lớn.""",
-  L.dreamDes17:
-      """Mơ cầu vồng:
+  L.dreamDes17: """Mơ cầu vồng:
 
 1. Hy vọng, lạc quan.
 2. Hóa giải khó khăn, bình yên nội tâm.
 3. Niềm vui, hạnh phúc.
 4. Chuyển hóa & trưởng thành.
 5. Kết nối & hòa hợp.""",
-  L.dreamDes18:
-      """Mơ hoàng hôn:
+  L.dreamDes18: """Mơ hoàng hôn:
 
 1. Kết thúc & khép lại một chặng.
 2. Chiêm nghiệm, suy ngẫm.
 3. Chuyển đổi, thay đổi góc nhìn.
 4. Bình yên, tĩnh tại.
 5. Hy vọng & khởi đầu mới sau kết thúc.""",
-  L.dreamDes19:
-      """Mơ bị bao phủ bởi tuyết:
+  L.dreamDes19: """Mơ bị bao phủ bởi tuyết:
 
 1. Cô lập, xa cách.
 2. Cần nghỉ ngơi/nhìn lại.
 3. Thuần khiết & khởi đầu mới.
 4. Lạnh lùng cảm xúc/xa cách.
 5. Chuyển hóa & thay đổi.""",
-  L.dreamDes20:
-      """Mơ cánh đồng hoa:
+  L.dreamDes20: """Mơ cánh đồng hoa:
 
 1. Tăng trưởng & tiềm năng.
 2. Hạnh phúc & niềm vui.
 3. Dồi dào & thịnh vượng.
 4. Sáng tạo & biểu đạt bản thân.
 5. Tái sinh & chữa lành.""",
-  L.dreamDes21:
-      """Mơ về mặt trăng:
+  L.dreamDes21: """Mơ về mặt trăng:
 
 1. Thấu hiểu cảm xúc, tiềm thức.
 2. Trực giác & dẫn lối nội tâm.
 3. Chu kỳ & chuyển pha cuộc sống.
 4. Suy tư, chiêm nghiệm.
 5. Huyền bí, chưa rõ ràng cần khám phá thêm.""",
-  L.dreamDes22:
-      """Mơ thiên đường:
+  L.dreamDes22: """Mơ thiên đường:
 
 1. Viên mãn tinh thần.
 2. Bình an & tĩnh lặng.
 3. Hạnh phúc tột bậc.
 4. Mong muốn thoát khỏi khó khăn hiện tại.
 5. Suy ngẫm về mục đích sống & thế giới bên kia.""",
-  L.dreamDes23:
-      """Mơ bị bỏ rơi:
+  L.dreamDes23: """Mơ bị bỏ rơi:
 
 1. Sợ bị từ chối/ra rìa.
 2. Cảm giác cô đơn, thiếu nâng đỡ.
 3. Vết thương quá khứ chưa chữa lành.
 4. Nhu cầu tự lập, đứng trên đôi chân mình.
 5. Chuyển đổi gây bất an.""",
-  L.dreamDes24:
-      """Mơ con đường bất tận:
+  L.dreamDes24: """Mơ con đường bất tận:
 
 1. Hành trình đời sống & tiến bộ không ngừng.
 2. Mơ hồ, thiếu định hướng.
 3. Kiên trì, quyết tâm theo đuổi mục tiêu.
 4. Mắc kẹt trong vòng lặp, nhàm chán.
 5. Khám phá & dám bước khỏi vùng an toàn.""",
-  L.dreamDes25:
-      """Mơ bị cướp:
+  L.dreamDes25: """Mơ bị cướp:
 
 1. Nỗi sợ mất mát (tài sản, an toàn, ổn định cảm xúc).
 2. Cảm giác dễ tổn thương, bất lực.
 3. Mất kiểm soát một khía cạnh đời sống.
 4. Bị xâm phạm ranh giới cá nhân.
 5. Gợi nhắc nhìn lại điều bạn cần giành lại/khẳng định giá trị bản thân.""",
-  L.dreamDes26:
-      """Mơ về người yêu cũ:
+  L.dreamDes26: """Mơ về người yêu cũ:
 
 1. Cảm xúc/ vấn đề chưa khép lại.
 2. Hoài niệm, nhìn lại quá khứ.
 3. Phản chiếu động lực trong quan hệ hiện tại.
 4. Trưởng thành cá nhân sau chia tay.
 5. Nhu cầu kết thúc, khép lại cho trọn vẹn.""",
-  L.dreamDes27:
-      """Mơ về động vật (tùy loài & ngữ cảnh):
+  L.dreamDes27: """Mơ về động vật (tùy loài & ngữ cảnh):
 
 1. Đặc tính loài gợi ý nghĩa (sư tử = dũng cảm; thỏ = mong manh/lanh lợi…).
 2. Bản năng & cảm xúc bị kìm nén/thuần phục.
@@ -364,8 +357,7 @@ Nhìn chung, nước là biểu tượng mạnh mẽ của trạng thái cảm x
 4. Biến đổi, chuyển hóa (bướm…).
 5. Cách con vật tương tác (thân thiện/hung hăng) phản chiếu cảm nhận của bạn.
 6. Biểu tượng văn hóa: ý nghĩa có thể khác nhau theo bối cảnh văn hóa.""",
-  L.dreamDes28:
-      """Mơ bị trễ:
+  L.dreamDes28: """Mơ bị trễ:
 
 1. Sợ không kịp hạn/không đạt kỳ vọng.
 2. Quá tải trách nhiệm.
@@ -373,8 +365,7 @@ Nhìn chung, nước là biểu tượng mạnh mẽ của trạng thái cảm x
 4. Lo lắng lỡ mất cơ hội.
 5. Tự gây áp lực tiêu chuẩn cao.
 6. Cần quản lý thời gian tốt hơn.""",
-  L.dreamDes29:
-      """Mơ về người đã khuất:
+  L.dreamDes29: """Mơ về người đã khuất:
 
 1. Tang thương & chữa lành.
 2. Thông điệp/khép lại điều dang dở trong tiềm thức.
@@ -382,8 +373,7 @@ Nhìn chung, nước là biểu tượng mạnh mẽ của trạng thái cảm x
 4. Cảm xúc chưa giải quyết với người ấy.
 5. Biểu tượng cho phẩm chất/hình ảnh gắn với bạn.
 6. Hoài niệm & tưởng nhớ.""",
-  L.dreamDes30:
-      """Mơ mang thai:
+  L.dreamDes30: """Mơ mang thai:
 
 1. Khởi đầu mới (ý tưởng, dự án, giai đoạn).
 2. Sáng tạo & tiềm năng nảy nở.
@@ -391,8 +381,7 @@ Nhìn chung, nước là biểu tượng mạnh mẽ của trạng thái cảm x
 4. Trông đợi điều quan trọng sắp đến.
 5. Nhu cầu nuôi dưỡng, chăm sóc.
 6. Mong muốn/lo lắng về chuyện làm cha mẹ.""",
-  L.dreamDes31:
-      """Mơ ngôi nhà cũ:
+  L.dreamDes31: """Mơ ngôi nhà cũ:
 
 1. Quá khứ, ký ức, trải nghiệm xưa.
 2. Hoài niệm, tình cảm dành cho thời đã qua.
@@ -400,8 +389,7 @@ Nhìn chung, nước là biểu tượng mạnh mẽ của trạng thái cảm x
 4. Thay đổi & trưởng thành qua thời gian.
 5. Cảm giác an toàn, ấm áp.
 6. Khám phá bản thân qua những “căn phòng” nội tâm khác nhau.""",
-  L.dreamDes32:
-      """Mơ đang làm việc:
+  L.dreamDes32: """Mơ đang làm việc:
 
 1. Căng thẳng liên quan công việc.
 2. Năng suất & thành tựu; tiến độ mục tiêu.
@@ -409,8 +397,7 @@ Nhìn chung, nước là biểu tượng mạnh mẽ của trạng thái cảm x
 4. Cân bằng cuộc sống – công việc.
 5. Giải quyết vấn đề/sáng tạo.
 6. Lặp lại nhàm chán nếu công việc đơn điệu.""",
-  L.dreamDes33:
-      """Mơ ở nơi xa lạ:
+  L.dreamDes33: """Mơ ở nơi xa lạ:
 
 1. Khám phá & trải nghiệm điều mới mẻ.
 2. Bất định, lo lắng trước giai đoạn mới.

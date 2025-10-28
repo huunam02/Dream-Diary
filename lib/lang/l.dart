@@ -120,6 +120,24 @@ class L {
   static const String mood30 = "🤩 Inspire";
   static const String mood31 = "😲 Surprise";
   static const String mood32 = "😇 Sympathy";
+  static const String mood33 = "😤 Determination";
+  static const String mood34 = "😴 Sleepy";
+  static const String mood35 = "🤯 Overwhelmed";
+  static const String mood36 = "🥹 Nostalgia";
+  static const String mood37 = "😔 Regret";
+  static const String mood38 = "😵 Conflicted";
+  static const String mood39 = "😇 Serenity";
+  static const String mood40 = "🤗 Affection";
+  static const String mood41 = "😍 Love";
+  static const String mood42 = "🤔 Curiosity";
+  static const String mood43 = "😶 Indifference";
+  static const String mood44 = "😤 Motivation";
+  static const String mood45 = "🤨 Skepticism";
+  static const String mood46 = "😋 Satisfaction";
+  static const String mood47 = "😖 Stress";
+  static const String mood48 = "😫 Exhaustion";
+  static const String mood49 = "😜 Playfulness";
+  static const String mood50 = "😐 Neutral";
 
   static const String title1 = "Water";
   static const String title2 = "Stray";

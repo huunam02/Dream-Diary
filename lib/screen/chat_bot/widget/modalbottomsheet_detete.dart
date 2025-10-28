@@ -45,7 +45,7 @@ class ModalbottomsheetResetChatCustom extends StatelessWidget {
             minWidth: double.infinity,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16.0)),
-            color: const Color(0xFFF1205F),
+            color: GlobalColors.linearPrimary1.colors.first,
             onPressed: ontapDelete,
             child: Text(
               L.reset.tr,

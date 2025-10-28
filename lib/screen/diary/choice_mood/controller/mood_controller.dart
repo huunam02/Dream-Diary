@@ -66,7 +66,6 @@ class MoodController extends GetxController {
       isSearch.value = false;
       Get.back();
     }
-    
   }
 
   void clearData() {
@@ -124,4 +123,22 @@ List<Mood> listMoodData = [
   Mood(title: L.mood30, isSelected: false),
   Mood(title: L.mood31, isSelected: false),
   Mood(title: L.mood32, isSelected: false),
+  Mood(title: L.mood33, isSelected: false),
+  Mood(title: L.mood34, isSelected: false),
+  Mood(title: L.mood35, isSelected: false),
+  Mood(title: L.mood36, isSelected: false),
+  Mood(title: L.mood37, isSelected: false),
+  Mood(title: L.mood38, isSelected: false),
+  Mood(title: L.mood39, isSelected: false),
+  Mood(title: L.mood40, isSelected: false),
+  Mood(title: L.mood41, isSelected: false),
+  Mood(title: L.mood42, isSelected: false),
+  Mood(title: L.mood43, isSelected: false),
+  Mood(title: L.mood44, isSelected: false),
+  Mood(title: L.mood45, isSelected: false),
+  Mood(title: L.mood46, isSelected: false),
+  Mood(title: L.mood47, isSelected: false),
+  Mood(title: L.mood48, isSelected: false),
+  Mood(title: L.mood49, isSelected: false),
+  Mood(title: L.mood50, isSelected: false),
 ];

@@ -1,3 +1,5 @@
+import 'package:dream_diary/widget/image_base.dart';
+
 import '/config/global_text_style.dart';
 import '/model/dream.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +23,7 @@ class ItemRandomDreamCustom extends StatelessWidget {
             height: 120.0,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(12.0),
-              child: Image.network(
+              child: ImageNetworkBase(
                 dream.image120x120,
                 fit: BoxFit.cover,
               ),

@@ -82,7 +82,6 @@ class _DreamScreenState extends State<DreamScreen> {
                 Dream dream = listDream[index];
                 return GestureDetector(
                   onTap: () => tapAndCheckInternet(() {
-
                     Get.to(() => DetailDreamScreen(dream: dream));
                   }),
                   child: ItemDreamCustom(dream: dream),

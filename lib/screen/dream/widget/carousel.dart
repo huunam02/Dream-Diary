@@ -1,3 +1,5 @@
+import 'package:dream_diary/widget/image_base.dart';
+
 import '/config/global_color.dart';
 import '/config/global_text_style.dart';
 import '/model/dream.dart';
@@ -6,7 +8,6 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'; // Import thư viện
-
 
 class CarouselCustom extends StatefulWidget {
   const CarouselCustom({super.key});
@@ -54,7 +55,7 @@ class _CarouselCustomState extends State<CarouselCustom> {
                           child: SizedBox(
                             height: double.infinity,
                             width: double.infinity,
-                            child: Image.network(
+                            child: ImageNetworkBase(
                                 listDream[_listIndexDream[index]].imageCarousel,
                                 fit: BoxFit.cover,
                                 width: 1000.0),
